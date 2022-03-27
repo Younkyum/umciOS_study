@@ -58,11 +58,11 @@
 		41DBBD2F27EF3C9000B0854D /* catstagram */ = {
 			isa = PBXGroup;
 			children = (
-				41DBBD4627EF458D00B0854D /* RegisterViewController.swift */,
 				41DBBD3027EF3C9000B0854D /* AppDelegate.swift */,
 				41DBBD3227EF3C9000B0854D /* SceneDelegate.swift */,
 				41DBBD3627EF3C9000B0854D /* Main.storyboard */,
 				41DBBD4427EF42BF00B0854D /* LoginViewController.swift */,
+				41DBBD4627EF458D00B0854D /* RegisterViewController.swift */,
 				41DBBD3927EF3C9100B0854D /* Assets.xcassets */,
 				41DBBD3B27EF3C9100B0854D /* LaunchScreen.storyboard */,
 				41DBBD3E27EF3C9100B0854D /* Info.plist */,
