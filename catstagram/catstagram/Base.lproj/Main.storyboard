@@ -283,11 +283,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="nHn-fL-z2U" id="Ps9-Xc-M4C"/>
-                        <outlet property="nameTextField" destination="rnC-KZ-C2t" id="P77-tH-cUZ"/>
-                        <outlet property="nicknameTextField" destination="nkX-90-nAA" id="KAH-gD-wVM"/>
-                        <outlet property="passwordTextField" destination="2wN-7S-WrB" id="cnn-K6-wdT"/>
-                        <outlet property="signupButton" destination="REJ-2J-ZRu" id="FOM-vH-sPD"/>
+                        <outlet property="emailTextField" destination="nHn-fL-z2U" id="hXD-5U-agR"/>
+                        <outlet property="nameTextField" destination="rnC-KZ-C2t" id="9aR-Qw-PhP"/>
+                        <outlet property="nickNameTextField" destination="nkX-90-nAA" id="IFU-Ji-cTo"/>
+                        <outlet property="passwordTextFiled" destination="2wN-7S-WrB" id="cwk-j2-Tww"/>
+                        <outlet property="signupButton" destination="REJ-2J-ZRu" id="NOL-Pg-9gZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bJ-AV-fig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

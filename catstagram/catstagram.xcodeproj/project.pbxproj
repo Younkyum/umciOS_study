@@ -14,6 +14,7 @@
 		41DBBD3D27EF3C9100B0854D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DBBD3B27EF3C9100B0854D /* LaunchScreen.storyboard */; };
 		41DBBD4527EF42BF00B0854D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DBBD4427EF42BF00B0854D /* LoginViewController.swift */; };
 		41DBBD4727EF458D00B0854D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DBBD4627EF458D00B0854D /* RegisterViewController.swift */; };
+		41F51A1E27F46C5B0018D209 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F51A1D27F46C5B0018D209 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		41DBBD3E27EF3C9100B0854D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DBBD4427EF42BF00B0854D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		41DBBD4627EF458D00B0854D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		41F51A1D27F46C5B0018D209 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		41DBBD2F27EF3C9000B0854D /* catstagram */ = {
 			isa = PBXGroup;
 			children = (
+				41F51A1D27F46C5B0018D209 /* Color+Extension.swift */,
 				41DBBD3027EF3C9000B0854D /* AppDelegate.swift */,
 				41DBBD3227EF3C9000B0854D /* SceneDelegate.swift */,
 				41DBBD3627EF3C9000B0854D /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41DBBD4527EF42BF00B0854D /* LoginViewController.swift in Sources */,
+				41F51A1E27F46C5B0018D209 /* Color+Extension.swift in Sources */,
 				41DBBD3127EF3C9000B0854D /* AppDelegate.swift in Sources */,
 				41DBBD3327EF3C9000B0854D /* SceneDelegate.swift in Sources */,
 				41DBBD4727EF458D00B0854D /* RegisterViewController.swift in Sources */,
