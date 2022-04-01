@@ -9,6 +9,13 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     // MARK: - Properties
+    var email:String = ""
+    var name:String = ""
+    var nickname: String = ""
+    var password: String = ""
+    
+    var userInfo: ((UserInfo) -> Void)?
+    
     // 유효성 검사를 위한 프로퍼티
     var isValidEmail = false {
         didSet {
@@ -46,10 +53,17 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var signupButton: UIButton!
     
+    @IBOutlet weak var popLoginButton: UIButton!
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTextField()
+        setupAttribute()
+        
+        // bug fix
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        
+        signupButton.layer.cornerRadius = 5
     }
     
     //MARK: - Action
@@ -59,15 +73,32 @@ class RegisterViewController: UIViewController {
         switch sender {
         case emailTextField:
             self.isValidEmail = text.isValidEmail()
+            self.email = text
         case nameTextField:
             self.isValidName = text.count > 2
+            self.name = text
         case nickNameTextField:
             self.isValidNickname = text.count > 2
+            self.nickname = text
         case passwordTextFiled:
             self.isValidPassword = text.isValidPassWord()
+            self.password = text
         default:
             print("help")
         }
+    }
+    
+    @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func registerButtonDidTap(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        
+        let userInfo = UserInfo(email: self.email, name: self.name, nickname: self.nickname, password: self.password)
+        
+        self.userInfo?(userInfo)
     }
     
     
@@ -97,6 +128,23 @@ class RegisterViewController: UIViewController {
     }
     
     
+    private func setupAttribute() {
+        //register Button
+        
+        let text1 = "계정이 있으신가요?"
+        let text2 = "로그인"
+        
+        let font1 = UIFont.systemFont(ofSize: 13)
+        let font2 = UIFont.boldSystemFont(ofSize: 13)
+        
+        let color1 = UIColor.darkGray
+        let color2 = UIColor.facebookColor
+        
+        let attribute = generateButtonAttribute(self.popLoginButton, texts: text1, text2, fonts: font1, font2, colors: color1, color2)
+        
+        self.popLoginButton.setAttributedTitle(attribute, for: .normal
+        )
+    }
 }
 
 extension String {
