@@ -128,7 +128,7 @@ class RegisterViewController: UIViewController {
     }
     
     
-    private func setupAttribute() {
+    private func setupAttribute() { // registerButton의 글자 색 다르게 하는 view method 사용
         //register Button
         
         let text1 = "계정이 있으신가요?"
@@ -148,13 +148,13 @@ class RegisterViewController: UIViewController {
 }
 
 extension String {
-    func isValidPassWord() -> Bool {
+    func isValidPassWord() -> Bool { // 비밀번호 적합성 확인
         let regex = "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,50}" // 8자리 ~ 50자리 영어+숫자+특수문자
         let passwordValidation = NSPredicate.init(format: "SELF MATCHES %@", regex)
         return passwordValidation.evaluate(with: self)
     }
     
-    func isValidEmail() -> Bool {
+    func isValidEmail() -> Bool { // 이메일 적합성 확인
         let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
         let emailTest = NSPredicate(format: "SELF MATCHES %@", regex)

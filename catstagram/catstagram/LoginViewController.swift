@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
         guard let userInfo = self.userInfo else { return }
         
-        if userInfo.email == self.email && userInfo.password == self.password {
+        if userInfo.email == self.email, userInfo.password == self.password {
             self.loginButton.backgroundColor = .facebookColor
             self.loginButton.isEnabled = true
             let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
