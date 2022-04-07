@@ -21,6 +21,10 @@
 		41F51A4B27F9E8850018D209 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F51A4A27F9E8850018D209 /* HomeViewController.swift */; };
 		41F51AC127FF46530018D209 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F51ABF27FF46530018D209 /* FeedTableViewCell.swift */; };
 		41F51AC227FF46530018D209 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F51AC027FF46530018D209 /* FeedTableViewCell.xib */; };
+		41F51AC527FF4E650018D209 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F51AC327FF4E650018D209 /* StoryTableViewCell.swift */; };
+		41F51AC627FF4E650018D209 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F51AC427FF4E650018D209 /* StoryTableViewCell.xib */; };
+		41F51AC927FF511F0018D209 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F51AC727FF511F0018D209 /* StoryCollectionViewCell.swift */; };
+		41F51ACA27FF511F0018D209 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F51AC827FF511F0018D209 /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		41F51A4A27F9E8850018D209 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41F51ABF27FF46530018D209 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		41F51AC027FF46530018D209 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		41F51AC327FF4E650018D209 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		41F51AC427FF4E650018D209 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		41F51AC727FF511F0018D209 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		41F51AC827FF511F0018D209 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 			children = (
 				41F51ABF27FF46530018D209 /* FeedTableViewCell.swift */,
 				41F51AC027FF46530018D209 /* FeedTableViewCell.xib */,
+				41F51AC327FF4E650018D209 /* StoryTableViewCell.swift */,
+				41F51AC427FF4E650018D209 /* StoryTableViewCell.xib */,
+				41F51AC727FF511F0018D209 /* StoryCollectionViewCell.swift */,
+				41F51AC827FF511F0018D209 /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -168,6 +180,8 @@
 				41DBBD3D27EF3C9100B0854D /* LaunchScreen.storyboard in Resources */,
 				41F51AC227FF46530018D209 /* FeedTableViewCell.xib in Resources */,
 				41DBBD3A27EF3C9100B0854D /* Assets.xcassets in Resources */,
+				41F51AC627FF4E650018D209 /* StoryTableViewCell.xib in Resources */,
+				41F51ACA27FF511F0018D209 /* StoryCollectionViewCell.xib in Resources */,
 				41DBBD3827EF3C9000B0854D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +196,8 @@
 				41F51A2027F46D540018D209 /* UIView+Extension.swift in Sources */,
 				41DBBD4527EF42BF00B0854D /* LoginViewController.swift in Sources */,
 				41F51A1E27F46C5B0018D209 /* Color+Extension.swift in Sources */,
+				41F51AC527FF4E650018D209 /* StoryTableViewCell.swift in Sources */,
+				41F51AC927FF511F0018D209 /* StoryCollectionViewCell.swift in Sources */,
 				41DBBD3127EF3C9000B0854D /* AppDelegate.swift in Sources */,
 				41F51A2427F687590018D209 /* UserInfo.swift in Sources */,
 				41F51A4B27F9E8850018D209 /* HomeViewController.swift in Sources */,
