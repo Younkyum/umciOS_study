@@ -2,7 +2,7 @@
 //  FeedTableViewCell.swift
 //  catstagram
 //
-//  Created by Jin younkyum on 2022/04/04.
+//  Created by Jin younkyum on 2022/04/08.
 //
 
 import UIKit
@@ -12,20 +12,39 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var imageViewUserProfile: UIImageView!
     @IBOutlet weak var labelUserName: UILabel!
     @IBOutlet weak var imageViewFeed: UIImageView!
-    @IBOutlet weak var buttonisHeart: UIButton!
-    @IBOutlet weak var buttonisBookmark: UIButton!
-    @IBOutlet weak var labelHowManyLike: UILabel!
+    @IBOutlet weak var buttonIsHeart: UIButton!
+    @IBOutlet weak var buttonIsBookMark: UIButton!
+    @IBOutlet weak var labelHowManyLikes: UILabel!
     @IBOutlet weak var labelFeed: UILabel!
     @IBOutlet weak var imageViewMyProfile: UIImageView!
+        
+    @IBAction func actionIsHeart(_ sender: Any) {
+        if buttonIsHeart.isSelected {
+            buttonIsHeart.isSelected = false
+        } else {
+            buttonIsHeart.isSelected = true
+        }
+    }
     
+    @IBAction func actionBookMark(_ sender: Any) {
+        if buttonIsBookMark.isSelected {
+            buttonIsBookMark.isSelected = false
+        } else {
+            buttonIsBookMark.isSelected = true
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        imageViewUserProfile.layer.conerRadius = 22.5
-//        imageViewUserProfile.clipsToBounds = true
-//        imageViewMyProfile.layer.conerRadius = 22.5
-//        imageViewMyProfile.clipsToBounds = true
+        imageViewUserProfile.clipsToBounds = true
+        imageViewMyProfile.clipsToBounds = true
+        
+        let fontSize = UIFont.boldSystemFont(ofSize: 9)
+        let attributedStr = NSMutableAttributedString(string: labelFeed.text ?? "")
+        attributedStr.addAttribute(.font, value: fontSize, range: NSRange.init(location: 0, length: 3))
+        
+        labelFeed.attributedText = attributedStr
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,5 +54,3 @@ class FeedTableViewCell: UITableViewCell {
     }
     
 }
-
-
