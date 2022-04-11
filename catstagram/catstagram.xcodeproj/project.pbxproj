@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417E55A8280420FC00E2C0D1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E55A7280420FC00E2C0D1 /* ProfileViewController.swift */; };
+		417E55AC280422E900E2C0D1 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E55AA280422E900E2C0D1 /* ProfileCollectionViewCell.swift */; };
+		417E55AD280422E900E2C0D1 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417E55AB280422E900E2C0D1 /* ProfileCollectionViewCell.xib */; };
 		41DBBD3127EF3C9000B0854D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DBBD3027EF3C9000B0854D /* AppDelegate.swift */; };
 		41DBBD3327EF3C9000B0854D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DBBD3227EF3C9000B0854D /* SceneDelegate.swift */; };
 		41DBBD3827EF3C9000B0854D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DBBD3627EF3C9000B0854D /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417E55A7280420FC00E2C0D1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		417E55AA280422E900E2C0D1 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		417E55AB280422E900E2C0D1 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		41DBBD2D27EF3C9000B0854D /* catstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = catstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DBBD3027EF3C9000B0854D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41DBBD3227EF3C9000B0854D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		417E55A6280420E900E2C0D1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				417E55A9280422CB00E2C0D1 /* Cell */,
+				417E55A7280420FC00E2C0D1 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		417E55A9280422CB00E2C0D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				417E55AA280422E900E2C0D1 /* ProfileCollectionViewCell.swift */,
+				417E55AB280422E900E2C0D1 /* ProfileCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		41DBBD2427EF3C8F00B0854D = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +124,7 @@
 		41F51A4927F9E8750018D209 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				417E55A6280420E900E2C0D1 /* Profile */,
 				41F51A6C27FB030A0018D209 /* Cell */,
 				41F51A4A27F9E8850018D209 /* HomeViewController.swift */,
 			);
@@ -180,6 +205,7 @@
 				41DBBD3D27EF3C9100B0854D /* LaunchScreen.storyboard in Resources */,
 				41F51AC227FF46530018D209 /* FeedTableViewCell.xib in Resources */,
 				41DBBD3A27EF3C9100B0854D /* Assets.xcassets in Resources */,
+				417E55AD280422E900E2C0D1 /* ProfileCollectionViewCell.xib in Resources */,
 				41F51AC627FF4E650018D209 /* StoryTableViewCell.xib in Resources */,
 				41F51ACA27FF511F0018D209 /* StoryCollectionViewCell.xib in Resources */,
 				41DBBD3827EF3C9000B0854D /* Main.storyboard in Resources */,
@@ -203,6 +229,8 @@
 				41F51A4B27F9E8850018D209 /* HomeViewController.swift in Sources */,
 				41F51A2227F46E370018D209 /* UIViewController+Extension.swift in Sources */,
 				41DBBD3327EF3C9000B0854D /* SceneDelegate.swift in Sources */,
+				417E55AC280422E900E2C0D1 /* ProfileCollectionViewCell.swift in Sources */,
+				417E55A8280420FC00E2C0D1 /* ProfileViewController.swift in Sources */,
 				41DBBD4727EF458D00B0854D /* RegisterViewController.swift in Sources */,
 				41F51AC127FF46530018D209 /* FeedTableViewCell.swift in Sources */,
 			);
